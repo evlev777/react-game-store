@@ -18,6 +18,5 @@ export const CartBlock = () =>{
             { totatalPrice > 0 ? <span className="cart-block__total-price">{totatalPrice} руб.</span> : null}
             {isCartMenuVisible && <CartMenu items ={items} onClick={() => null}/>}
         </div>
-
     )
 }
