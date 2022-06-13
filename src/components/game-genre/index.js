@@ -1,1 +1,1 @@
-export * from './game-genre'
+export * from './game-genre';

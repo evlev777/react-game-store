@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 80px;
     display: flex;
     align-items: center;
@@ -6,18 +6,18 @@
     margin-bottom: 30px;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-grow: 1;
 }
 
-.header__store-title{
-    color:white;
+.header__store-title {
+    color: white;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
 }
 
-.header__cart-btn-wrapper{
+.header__cart-btn-wrapper {
     justify-content: flex-end;
 }
