@@ -2,8 +2,9 @@ import React from "react";
 import {GameCover} from '../game-cover';
 import {GameBuy} from '../game-buy';
 import {GameGenre} from '../game-genre';
-import {useHistory} from "react-router";
+import {useHistory} from "react-router-dom"
 import { useDispatch } from "react-redux";
+import {setCurrentGame} from "../../redux/games/reducer"
 import './game-item.css'
 
 
@@ -11,7 +12,8 @@ export const GameItem = ({game}) =>{
     const history = useHistory();
     const dispatch = useDispatch();
     const handelClick = () => {
-
+        dispatch(setCurrentGame(game));
+        history.push(`/app/${game.title}`);
     }
     return(
         
